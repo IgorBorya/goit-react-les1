@@ -2,6 +2,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import List from "./components/List/List";
 import Message from "./components/Message/Message";
+import Modal from "./components/Modal/Modal";
 
 const App = () => {
   const isOnline = false;
@@ -28,7 +29,11 @@ const App = () => {
       <Message message="Hello" />
       <List title="films" data={filmsData} />
       <List title="Goods" data={goodsData} />
-      <Footer />
+      <Modal>
+        <h2>Rent house</h2>
+        <button>Yes</button>
+        <button>No</button>
+      </Modal>
     </>
   );
 };
