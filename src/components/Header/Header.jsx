@@ -1,6 +1,8 @@
+import s from "./Header.module.css";
+
 const Header = () => {
   return (
-    <header>
+    <header className={s.list}>
       <div>Logo</div>
       <ul>
         <li>Home</li>
